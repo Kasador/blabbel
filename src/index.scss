@@ -1,7 +1,8 @@
 // color scheme
 $red: #f7685e;
-$black: #444;
+$black: #555;
 $white: #f3f3f4;
+$gray: #888;
 
 // body 
 body {
@@ -9,5 +10,76 @@ body {
 }
 // navbar
 .Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $black;
+}
+.LogoWrapper {
+    display: flex;
+    align-items: center;
+    margin: 10px 20px;
+}
+.Logo {
+    width: 80px;
+}
+.HeaderTitle {
+    font-size: 3rem;
+    color: $white;
+}
+.Online {
+    margin: 10px 40px;
     
+    span {
+        font-size: 2.5rem;
+        color: $white;
+    }
+}
+#NumOnline {
+    color: $red;
+}
+// home page
+.MainBackground {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.HomeHeader {
+    position: absolute;
+    left: 50%;
+    top: 20vh;
+    transform: translateX(-50%);
+    width: 80%;
+
+    h1 {
+        font-size: 4rem;
+        text-align: left;
+        color: $black;
+    }
+    p {
+        font-size: 2.5rem;
+        color: $gray;
+    }
+    button {
+        font-size: 3rem;
+        margin: 40px;
+        border-radius: 5px;
+        padding: 5px 20px;
+        background-color: $red;
+        color: $white;
+        box-shadow: 2px 2px 2px $gray;
+        cursor: pointer;
+
+        transition: all 0.1;
+    }
+    button:active {
+        transform: scale(0.95);
+    }
+    button:hover {
+        color: white;
+    }
+    button:focus {
+        outline: none;
+    }
 }
